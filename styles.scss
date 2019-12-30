@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+$base_font: Roboto, sans-serif;
+
+* {
+    font-family: $base_font;
+}
+
+body {
+    background-color: #3d3935;
+}
+
+.header {
+    padding: 10px;
+    &__ground {
+        background-color: white;
+    }
+    &__image {
+        height: 70px;
+    }
+    &__title {
+        font-family: $base_font;
+        line-height: 70px;
+        font-size: 40px;
+        font-weight: 300;
+    }
+}
+
+.project {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100%;
+    &__name {
+        line-height: 8mm;
+        font-size: 20px;
+        padding: 2mm;
+        border-radius: 1mm;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__author {
+        margin-top: 20px;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 300;
+        &-name {
+            text-align: center;
+            display: block;
+            border-radius: 5px;
+            &:link {
+                color: black
+            }
+            &:visited {
+                color: black
+            }
+            &:hover {
+                background-color: blue;
+                color: white
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none !important; 
+    &:hover {
+        color: black;
+    }   
+}
+
+.link {
+    display: block;
+    line-height: 6mm;
+    background-color: #f8f8f8;
+    color: gray;
+    text-decoration: none;
+    padding: 2mm;
+    border-radius: 1mm;
+    text-align: center;
+    margin: 10px;
+    &:hover {
+        background-color: blue;
+        color: white;
+    }
+}
+
+.student {
+    line-height: 8mm;
+    padding: 2mm;
+    border-radius: 1mm;
+    background-color: rgb(247, 247, 185);
+    font-weight: bold;
+}
+
+.link-empy {
+    line-height: 8mm;
+    background-color: black;
+    color: gray;
+    text-decoration: none;
+    padding: 2mm;
+    border-radius: 1mm;
+    text-align: center;
+    width: 100%;
+}
+.live {
+    line-height: 8mm;
+    background-color: lightgreen;
+    color: black;
+    text-decoration: none;
+    padding: 2mm;
+    border-radius: 1mm;
+    text-align: center;
+}
+.virtual {
+    line-height: 8mm;
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    padding: 2mm;
+    border-radius: 1mm;
+    text-align: center;
+}
